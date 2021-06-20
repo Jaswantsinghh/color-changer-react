@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom';
 
 class Main extends React.Component {
@@ -27,24 +28,12 @@ class SubmitBtn extends React.Component {
     }
 }
 class Body extends React.Component {
-    renderHeading() {
-        return <Heading />
-    }
-    renderMain() {
-        return <Main />
-    }
-    renderinputColor() {
-        return <InputColor />
-    }
-    renderSubmit() {
-        return <SubmitBtn />
-    }
     render() {
         return (<div>
-            {this.renderHeading()}
-            {this.renderinputColor()}
-            {this.renderSubmit()}
-            {this.renderMain()}
+            <Heading />
+            <Main />
+            <InputColor />
+            <SubmitBtn />
 
         </div>
         )
